@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Categories extends React.Component {
+class Activities extends React.Component {
 
     render() {
       return (
