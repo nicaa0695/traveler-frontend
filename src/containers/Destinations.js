@@ -9,6 +9,11 @@ import VisitedDestinations from '../components/VisitedDestinations';
 import BucketList from '../components/BucketList';
 
 class Destinations extends React.Component {
+
+  componentDidMount() {
+    this.props.fetchDestinations()
+  }
+
     render() {
         return (
           <div>
@@ -24,4 +29,10 @@ class Destinations extends React.Component {
     }
 }
 
-export default Destinations;
+const mapStateToProps = state => {
+  return {
+    destinations: state.destinations
+  }
+};
+
+export default connect(mapStateToProps, { fetchDestinations })(Destinations);
