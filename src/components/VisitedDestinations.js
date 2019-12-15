@@ -6,7 +6,7 @@ const VisitedDestinations = props => {
 
   return (
     <div className='DestinationContainer'>
-      <h3>Places you have visited</h3>
+      <h3>Places You Have Been</h3>
 
       {props.destinations.map(destination => {
         if (destination.visited === true) {
