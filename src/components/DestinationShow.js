@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
-import Categories from '../containers/Categories';
+import Activities from '../containers/Activities';
 import { deleteDestination, toggleVisited, toggleBucketList } from '../actions/destinationActions';
 
 
 const DestinationShow = props => {
 
-  let destination = props.destinations.filter(destination => destination.id == props.match.params.id)[0];
+  let destination = props.destinations.filter(destination => destination.id === props.match.params.id)[0];
 
   const handleDelete = () => {
     props.deleteDestination(destination.id);
@@ -39,7 +39,7 @@ const DestinationShow = props => {
         </Button>
       </Card>
 
-      <Categories destination={destination} />
+      <Activities destination={destination} />
     </div>
   );
 };
