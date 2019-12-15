@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { ListGroup, ListGroupItem, Button } from 'reactstrap';
-import { deleteCategory } from '../actions/activityActions';
+import { deleteActivity } from '../actions/activityActions';
 
 const ActivitiesList = props => {
 
