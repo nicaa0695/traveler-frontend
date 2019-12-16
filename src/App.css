@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.HomePage {
+  padding: 16px;
+  color: #000000;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+
+.HomePageImage {
+  max-height: 635px;
+  width: 100%;
+}
+
+.NavbarContainer {
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+}
+
+.NavbarImage {
+  padding: 7px 14px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.NavbarLink {
+  float: left;
+  color: #ececf1;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+}
+
+.NavbarLink:hover {
+  color: #33FFFF;
+  text-decoration: none;
+}
