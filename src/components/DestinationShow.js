@@ -7,7 +7,7 @@ import { deleteDestination, toggleVisited, toggleBucketList } from '../actions/d
 
 const DestinationShow = props => {
 
-  let destination = props.destinations.filter(destination => destination.id === props.match.params.id)[0];
+  let destination = props.destinations.filter(destination => destination.id == props.match.params.id)[0];
 
   const handleDelete = () => {
     props.deleteDestination(destination.id);
@@ -32,10 +32,10 @@ const DestinationShow = props => {
           <CardImg className='DestinationImage' src={destination && destination.image} alt={destination && destination.name} />
         </CardBody>
         <Button onClick={handleVisited} className='VisitedButton'>
-          {destination && destination.visited === false ? 'Add to Visited' : 'Visited'}
+          {destination && destination.visited === false ? 'Add to Visited' : 'You Have Visited'}
         </Button>
         <Button onClick={handleBucketList} className='BucketListButton'>
-          {destination && destination.bucket_list === false ? 'Add to Bucket List' : 'In your Bucket List'}
+          {destination && destination.bucket_list === false ? 'Add to Bucket List' : 'This Is In your Bucket List'}
         </Button>
       </Card>
 

@@ -14,7 +14,7 @@ export const addActivity = (activity, destinationId) => {
   
   export const deleteActivity = (activityId, destinationId) => {
     return (dispatch) => {
-      fetch(`http://localhost:3000/api/v1/destinations/${destinationId}/activities/${activityId}`, {
+      fetch(`http://localhost:3000/destinations/${destinationId}/activities/${activityId}`, {
         method: 'DELETE'
       })
       .then(res => res.json())
