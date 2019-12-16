@@ -15,7 +15,7 @@ class DestinationCard extends React.Component {
 
   callApi = () => {
     console.log('a')
-    fetch(`http://localhost:3000destinatidfsfsdfsdons/1`)
+    fetch(`http://localhost:3000/destinations/1`)
       .then(res => {
         console.log(res)
         if (!res.ok) {

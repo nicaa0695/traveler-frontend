@@ -11,10 +11,10 @@ const ActivitiesList = props => {
 
   return (
     <div className='ActivitiesList'>
-      {props.activities && props.activities.length === 0 ? <h6>There aren't any activities for this location yet</h6> : <h5>Activities for this location</h5>}
+      {props.activities && props.activities.length === 0 ? <h6>There aren't any activities for this location yet</h6> : <h5>Below Are Some Activities for this Location</h5>}
       <ListGroup>
         {props.activities && props.activities.map(activity =>
-          <ListGroupItem key={activity.id}>{activity.title}<Button onClick={() => handleDelete(activity)} className='DeleteButton'>x</Button></ListGroupItem>
+          <ListGroupItem style={{fontSize: 'xx-large' }} key={activity.id}>{activity.title}   <Button style={{backgroundColor: 'black'}}onClick={() => handleDelete(activity)} className='DeleteButton'>Delete This Activity</Button></ListGroupItem>
         )}
       </ListGroup>
     </div>

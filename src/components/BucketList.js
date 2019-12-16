@@ -6,7 +6,7 @@ const BucketList = props => {
 
   return (
     <div className='DestinationContainer'>
-      <h3>Destinations on your Bucket List</h3>
+      <h3 style={{color: 'white', fontWeight: '700', borderStyle: 'dotted'}}>Destinations on your Bucket List</h3>
 
       {props.destinations.map(destination => {
         if (destination.bucket_list === true) {

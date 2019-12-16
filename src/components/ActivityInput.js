@@ -27,19 +27,18 @@ class ActivityInput extends React.Component {
     return (
       <div className='ActivityForm'>
         <Form onSubmit={this.handleSubmit}>
-          <FormGroup row>
-            <h5>Add a New Activity</h5>
-          </FormGroup>
+          
+            <h5 style={{borderStyle: 'dotted', margin: '20px'}}>Add a New Activity</h5>
+          
 
           <FormGroup row>
-            <Label for='title' sm={2}>Title</Label>
+            <Label for='title' sm={2}>Things To Do:</Label>
             <Col md={10}>
-              <Input type='text' name='title' value={this.state.title} onChange={this.handleChange}/>
+              <Input type='text' name='title' value={this.state.title} placeholder='Beach, City Tours, Good Eating, Museums . . .' onChange={this.handleChange}/>
             </Col>
           </FormGroup>
-
-          <Button>Add Activity</Button>
         </Form>
+        <Button>Add Activity</Button>
       </div>
     );
   }

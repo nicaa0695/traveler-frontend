@@ -26,17 +26,17 @@ const DestinationShow = props => {
   return (
     <div>
       <Card className = 'DestinationShow'>
-        <CardBody>
-          <Button onClick={handleDelete} className='DeleteButton'>x</Button>
-          <CardTitle>{destination && destination.name} - {destination && destination.country}</CardTitle>
-          <CardImg className='DestinationImage' src={destination && destination.image} alt={destination && destination.name} />
+      <CardBody>
+          <CardTitle style={{border: 'dotted' }}>{destination && destination.name} - {destination && destination.country}</CardTitle>
+          <CardImg className='DestinationImage' src={destination && destination.image} alt={destination && destination.name} /><br></br><br></br>
         </CardBody>
-        <Button onClick={handleVisited} className='VisitedButton'>
+        <Button onClick={handleVisited} className='VisitedButton' style={{alignItems: 'center' }}>
           {destination && destination.visited === false ? 'Add to Visited' : 'You Have Visited'}
         </Button>
         <Button onClick={handleBucketList} className='BucketListButton'>
           {destination && destination.bucket_list === false ? 'Add to Bucket List' : 'This Is In your Bucket List'}
         </Button>
+        <Button onClick={handleDelete} className='DeleteButton'>Delete This Destination</Button>
       </Card>
 
       <Activities destination={destination} />
