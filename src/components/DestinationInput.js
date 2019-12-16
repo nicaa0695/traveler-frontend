@@ -28,14 +28,15 @@ class DestinationInput extends React.Component {
     });
   };
 
+
   render() {
     return (
       <div className='DestinationFormContainer'>
         <Form className='DestinationForm' onSubmit={this.handleSubmit}>
 
-          <FormGroup row>
+          {/* <FormGroup row> */}
             <h5>Add a New Destination</h5>
-          </FormGroup>
+          {/* </FormGroup> */}
 
           <FormGroup row>
             <Label for='name' sm={2}>Name</Label>
