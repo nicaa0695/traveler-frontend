@@ -6,7 +6,7 @@ const BucketList = props => {
 
   return (
     <div className='DestinationContainer'>
-      <h3>Destinations in your Bucket List</h3>
+      <h3>Destinations on your Bucket List</h3>
 
       {props.destinations.map(destination => {
         if (destination.bucket_list === true) {
