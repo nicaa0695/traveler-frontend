@@ -41,14 +41,14 @@ class DestinationInput extends React.Component {
           <FormGroup row>
             <Label for='name' sm={2}>Name</Label>
             <Col md={10}>
-              <Input type='text' name='name' value={this.state.name} onChange={this.handleChange} />
+              <Input type='text' name='name' value={this.state.name} placeholder='Barcelona . . .' onChange={this.handleChange} />
             </Col>
           </FormGroup>
 
           <FormGroup row>
             <Label for='country' sm={2}>Country</Label>
             <Col md={10}>
-              <Input type='text' name='country' value={this.state.country} onChange={this.handleChange} />
+              <Input type='text' name='country' value={this.state.country} placeholder='Spain . . .' onChange={this.handleChange} />
             </Col>
           </FormGroup>
 
