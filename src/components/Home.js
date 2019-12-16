@@ -6,7 +6,7 @@ const Home = () => {
     <div className='HomePage'>
       <h3>Travelers</h3>
       <p>Where do want to go?</p>
-      <img className='HomePageImage' src='https://desktopwalls.net/wp-content/uploads/2014/08/Aircraft%20Wing%20Blue%20Sunset%20Sky%20Clouds%20Desktop%20Wallpaper.jpg' alt='traveling' />
+      <img className='HomePageImage' src='https://www.stockillustrations.com/Image.aspx?src=medres&name=WIRY0092.jpg&sz=572&fitw=y' alt='traveling' />
     </div>
   );
 };
