@@ -1,68 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Travelers
 
-## Available Scripts
+This project was built with a Rails API and a React/Redux frontend. Users can add destinations with a city, country, and image URL. You can add activities to those destinations as well as add destinations to your bucket-list or to a list of places you’ve been to.
 
-In the project directory, you can run:
+# Motivation
 
-### `yarn start`
+I've been traveling a lot lately so I thought it was the perfect opportunity to build an app for me to use to add destinations to my bucket-list or keep track of the places I've been. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# To Run The App
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+With the rails server running (rails s), you can 'cd travelers-frontend' and run 'npm start'. That will take you to https://localhost:3000 or ttps://localhost:3001 if the rails server is running on port 3000. 
 
-### `yarn test`
+# How To Use 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. You will be on the home page.
+2. To see all of your destinations, click 'Destinations'. There, you can add a new destination or click on an existing destination to add activities to it, i.e. Sight-seeing, Beach, etc. Here, you can also add a destination to your bucket-list or to a list of places you've visited.
+3. Click 'Visited Destinations' to see the places youve been.
+4. Click 'Bucket List' to see which places you want to go. 
