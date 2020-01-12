@@ -1,3 +1,4 @@
+// adding activities
 export const addActivity = (activity, destinationId) => {
     return (dispatch) => {
       fetch(`http://localhost:3000/destinations/${destinationId}/activities`, {
@@ -11,7 +12,8 @@ export const addActivity = (activity, destinationId) => {
       })
     };
   };
-  
+
+  // deleting activities
   export const deleteActivity = (activityId, destinationId) => {
     return (dispatch) => {
       fetch(`http://localhost:3000/destinations/${destinationId}/activities/${activityId}`, {
