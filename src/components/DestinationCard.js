@@ -39,8 +39,8 @@ class DestinationCard extends React.Component {
         <CardBody>
           <CardTitle>{destination.name} - {destination.country}</CardTitle>
           <CardImg className='DestinationImage' src={destination.image} alt={destination.name} />
-          <button onClick={this.countLikes}>Like: {this.state.likes}</button>
-          <button onClick={this.callApi}>Call API</button>
+          <Button onClick={this.countLikes}>Like: {this.state.likes}</Button>
+          <Button onClick={this.callApi}>Call API</Button>
         </CardBody>
       </Card>
     )
