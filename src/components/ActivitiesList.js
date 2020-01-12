@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { deleteActivity } from '../actions/activityActions';
 
+// adding/deleting activities from destinations
 const ActivitiesList = props => {
 
   const handleDelete = (activity) => {
