@@ -1,6 +1,8 @@
 import React from 'react';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
 
+
+// in process of adding likes???
 class DestinationCard extends React.Component {
 
   state = {
