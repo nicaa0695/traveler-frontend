@@ -1,3 +1,4 @@
+// fetch destinations 
 export const fetchDestinations = () => {
     return (dispatch) => {
       fetch('http://localhost:3000/destinations')
@@ -8,7 +9,8 @@ export const fetchDestinations = () => {
       }))
     };
   };
-  
+
+  // add destinations
   export const addDestination = (destinationData, history, path) => {
     return (dispatch) => {
       fetch('http://localhost:3000/destinations', {
@@ -23,7 +25,8 @@ export const fetchDestinations = () => {
       })
     };
   };
-  
+
+  //delete destinations 
   export const deleteDestination = destinationId => {
     return (dispatch) => {
       fetch(`http://localhost:3000/destinations/${destinationId}`, {
@@ -36,6 +39,7 @@ export const fetchDestinations = () => {
     };
   };
   
+  //toggle visited/not visted
   export const toggleVisited = (destination, destinationId) => {
     const updatedVisited = {...destination, visited: !destination.visited};
   
@@ -51,8 +55,9 @@ export const fetchDestinations = () => {
       })
     };
   };
-  
-  export const toggleBucketList = (destination, destinationId) => {
+
+  // add to bucketlist
+   export const toggleBucketList = (destination, destinationId) => {
     const updatedBucketList = {...destination, bucket_list: !destination.bucket_list};
   
     return (dispatch) => {
