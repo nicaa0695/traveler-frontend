@@ -1,4 +1,4 @@
-// fetch destinations 
+// fetch all destinations 
 export const fetchDestinations = () => {
     return (dispatch) => {
       fetch('http://localhost:3000/destinations')
@@ -39,7 +39,7 @@ export const fetchDestinations = () => {
     };
   };
   
-  //toggle visited/not visted
+  //toggle destination visited/not visted
   export const toggleVisited = (destination, destinationId) => {
     const updatedVisited = {...destination, visited: !destination.visited};
   
@@ -56,7 +56,7 @@ export const fetchDestinations = () => {
     };
   };
 
-  // add to bucketlist
+  // add destination to bucketlist with fetch
    export const toggleBucketList = (destination, destinationId) => {
     const updatedBucketList = {...destination, bucket_list: !destination.bucket_list};
   
