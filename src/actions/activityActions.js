@@ -8,7 +8,7 @@ export const addActivity = (activity, destinationId) => {
       })
       .then(res => res.json())
       .then(destination => {
-        dispatch({type: 'ADD_CATEGORY', payload: destination})
+        dispatch({type: 'ADD_ACTIVITY', payload: destination})
       })
     };
   };
